@@ -1,21 +1,19 @@
 
+package Formas;
 
-package exercicios.animal;
 
 public class Main {
     
-  public static void main(String[] args) {
+public static void main(String[] args) {
         
-        Animal[] animais = new Animal[2];
-
-       
-        animais[0] = new Cachorro();
-        animais[1] = new Gato();
+        Circulo circulo = new Circulo("Vermelho");
+        circulo.definirDimensoes(5); 
+        System.out.println("Área do Círculo: " + circulo.calcularArea());
 
         
-        for (Animal animal : animais) {
-            animal.emitirSom(); 
-        }
+        Retangulo retangulo = new Retangulo("Azul");
+        retangulo.definirDimensoes(4, 6); 
+        System.out.println("Área do Retângulo: " + retangulo.calcularArea());
     }
 }
 
